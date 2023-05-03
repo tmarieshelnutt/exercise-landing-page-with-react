@@ -1,26 +1,36 @@
 import React from "react";
+// import Container from 'react-bootstrap/Container';
+// import Nav from 'react-bootstrap/Nav';
+// import Navbar from 'react-bootstrap/Navbar';
+import NavigationBar from './component/NavigationBar.jsx';
+
+
 
 //include images into your bundle
 import rigoImage from "../../img/rigo-baby.jpg";
+// import { render } from "react-dom";
 
 //create your first component
-const Home = () => {
+class Home extends Component {
+	render() {
 	return (
-		<div className="text-center">
-			<h1 className="text-center mt-5">Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working...
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
-		</div>
-	);
-};
+	this.landingPage()
+	)
+	}
 
+	landingPage() {
+		return <div className="Navbar">
+			<NavigationBar />
+		</div>
+			,
+			<div className="Jumbotron">
+				<Jumbotron />
+			</div>
+			,
+			<div className="Cards">
+				<Cards />
+			</div>;
+	}
+}
+// 		
 export default Home;
