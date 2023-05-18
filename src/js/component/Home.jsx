@@ -7,10 +7,10 @@ function Home() {
   return (
     <div className="App">
       <Navbar />
-      <div>
+      <div className="container d-flex justify-content-around" >
         <Jumbotron />
       </div>
-      <div>
+      <div >
         <Cards />
       </div>
     </div>
